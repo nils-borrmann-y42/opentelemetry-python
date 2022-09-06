@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1662492917099,
+  "lastUpdate": 1662492919995,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22818,44 +22818,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "aaronabbott@google.com",
-            "name": "Aaron Abbott",
-            "username": "aabmass"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "db9d40bcb9fe83fdea9afcd763338d92acfc78cd",
-          "message": "Add callback options with timeout to observable callbacks (#2664)\n\n* Add callback options with timeout to observable callbacks\r\n\r\n* remove debugging code\r\n\r\n* changelog",
-          "timestamp": "2022-05-06T18:19:39-06:00",
-          "tree_id": "76b3538cb5dc4053eb9f83da55cb0bfb8271bf55",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/db9d40bcb9fe83fdea9afcd763338d92acfc78cd"
-        },
-        "date": 1651883107134,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2697.3834309893355,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00007305791709076607",
-            "extra": "mean: 370.7296443328504 usec\nrounds: 1403"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 6404.429906479332,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0007013053170234314",
-            "extra": "mean: 156.14192279445587 usec\nrounds: 9533"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "srikanth.chekuri92@gmail.com",
             "name": "Srikanth Chekuri",
             "username": "srikanthccv"
@@ -26612,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0007499548876407374",
             "extra": "mean: 178.06908706689103 usec\nrounds: 8258"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "lechen@microsoft.com",
+            "name": "Leighton Chen",
+            "username": "lzchen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "05fd6f3399b1a214c46e71367e124be5d504ad26",
+          "message": "Fix preferred_aggregation + preferred_temporality example (#2911)",
+          "timestamp": "2022-09-06T12:30:12-07:00",
+          "tree_id": "1a4c13ab7fac11601bf7bea4e68f7da61d87b7d6",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/05fd6f3399b1a214c46e71367e124be5d504ad26"
+        },
+        "date": 1662492855898,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3774.5552968875627,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000007198474369813599",
+            "extra": "mean: 264.9318717954891 usec\nrounds: 1365"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7409.486392339824,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006677537910045078",
+            "extra": "mean: 134.96212113080247 usec\nrounds: 7463"
           }
         ]
       }
