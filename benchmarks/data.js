@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1662484684125,
+  "lastUpdate": 1662484693546,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -86198,44 +86198,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "07a5b64a3a9dd1025e65b4bdcfc0a6377e34accc",
-          "message": "Inform the user of conflicting view configuration (#2608)\n\n* Inform the user if there is a view configuration conflict\r\n\r\nFixes #2556\r\n\r\n* Add test case\r\n\r\n* Fix lint\r\n\r\n* Add test case for another kind of collision\r\n\r\n* Fix test cases\r\n\r\n* Fix lint\r\n\r\n* Fix tests\r\n\r\n* Add equal comparison between views\r\n\r\n* Rename __eq__ to conflicts\r\n\r\n* Refactor deep code into a function\r\n\r\n* Refactor conflict handling methods\r\n\r\n* Update opentelemetry-sdk/src/opentelemetry/sdk/_metrics/_internal/_view_instrument_match.py\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>\r\n\r\n* Update opentelemetry-sdk/src/opentelemetry/sdk/_metrics/_internal/_view_instrument_match.py\r\n\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>\r\n\r\n* Use continue\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>\r\nCo-authored-by: Leighton Chen <lechen@microsoft.com>",
-          "timestamp": "2022-05-06T20:00:39Z",
-          "tree_id": "965f62cee6fc6925e6f04bff61732852fd212a63",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/07a5b64a3a9dd1025e65b4bdcfc0a6377e34accc"
-        },
-        "date": 1651867304481,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 131992.4366305445,
-            "unit": "iter/sec",
-            "range": "stddev: 3.8878131971174933e-7",
-            "extra": "mean: 7.576191678308551 usec\nrounds: 13387"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 254290.7127740662,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000010101305724443573",
-            "extra": "mean: 3.932506968465208 usec\nrounds: 58477"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "aaronabbott@google.com",
             "name": "Aaron Abbott",
             "username": "aabmass"
@@ -89992,6 +89954,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000008211738235072836",
             "extra": "mean: 5.053982610036775 usec\nrounds: 59172"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ronyish@cisco.com",
+            "name": "Ron Yishai",
+            "username": "ronyis"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "2d591e4f29d0f14fd9a66e4a74cc123a340a57a3",
+          "message": "Adding support for setting OTLP exporter protocol by env vars (#2893)",
+          "timestamp": "2022-09-06T22:45:04+05:30",
+          "tree_id": "2c1d613754f8a2dc635fc1e13cda73d7bd4e4721",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/2d591e4f29d0f14fd9a66e4a74cc123a340a57a3"
+        },
+        "date": 1662484619734,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 102497.88433176844,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000012512710968321049",
+            "extra": "mean: 9.756298937480192 usec\nrounds: 11765"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 181075.19702382776,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000031470144899209996",
+            "extra": "mean: 5.522567510272595 usec\nrounds: 58480"
           }
         ]
       }
