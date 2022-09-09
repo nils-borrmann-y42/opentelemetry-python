@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1662656857901,
+  "lastUpdate": 1662715318263,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -70990,44 +70990,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "srikanth.chekuri92@gmail.com",
-            "name": "Srikanth Chekuri",
-            "username": "srikanthccv"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "3658e217c8530d6639dccffe621f07e0e12f814c",
-          "message": "Update to semantic conventions v1.11.0 (#2669)",
-          "timestamp": "2022-05-07T08:26:45+05:30",
-          "tree_id": "e8b53b32bfef65272f65ebb54a25b183a1bfe099",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/3658e217c8530d6639dccffe621f07e0e12f814c"
-        },
-        "date": 1651892300541,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 18347.128374438573,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00001872169533317292",
-            "extra": "mean: 54.50444230788789 usec\nrounds: 4316"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 12793.916583967328,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00007459859876239658",
-            "extra": "mean: 78.1621478799657 usec\nrounds: 5660"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "ocelotl@users.noreply.github.com",
             "name": "Diego Hurtado",
             "username": "ocelotl"
@@ -74784,6 +74746,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000020600757771491787",
             "extra": "mean: 61.24801715654236 usec\nrounds: 6703"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "overmeulen@murex.com",
+            "name": "Olivier VERMEULEN",
+            "username": "overmeulen"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "41b9e26d8324ae0496c85326b35e92bf617932d9",
+          "message": "Add a configurable max_export_batch_size to the gRPC metrics exporter (#2809)",
+          "timestamp": "2022-09-09T14:49:13+05:30",
+          "tree_id": "db74b344e5acebf8c123fdaff403b882189accb8",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/41b9e26d8324ae0496c85326b35e92bf617932d9"
+        },
+        "date": 1662715261131,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 24132.650501813157,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000054827995714117525",
+            "extra": "mean: 41.43763653001427 usec\nrounds: 4922"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 18469.728401493532,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00000262079582674264",
+            "extra": "mean: 54.14264781062705 usec\nrounds: 5869"
           }
         ]
       }
