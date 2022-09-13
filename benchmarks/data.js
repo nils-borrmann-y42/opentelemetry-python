@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1663088493067,
+  "lastUpdate": 1663088507007,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -48188,44 +48188,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "e2edc9dfccc411930131bceb4df3d2aeed7d9feb",
-          "message": "Check exceptions in force_flush too (#2671)",
-          "timestamp": "2022-05-08T08:37:26+05:30",
-          "tree_id": "1842e014da163029d814f6629e46dcff9244bf97",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/e2edc9dfccc411930131bceb4df3d2aeed7d9feb"
-        },
-        "date": 1651979312559,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 143976.1126999387,
-            "unit": "iter/sec",
-            "range": "stddev: 3.511854460260255e-7",
-            "extra": "mean: 6.945596607988054 usec\nrounds: 11262"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 264714.0495640522,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000002483746314514549",
-            "extra": "mean: 3.77766122216355 usec\nrounds: 71938"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "606d535551c14fbc5a68921d485be35ddb5a6ce2",
           "message": "Refactor metrics SDK paths (#2670)\n\n* Refactor metrics SDK paths\r\n\r\nFixes #2666\r\n\r\n* Add fix for 3.6\r\n\r\n* Fix OTLP metrics exporter\r\n\r\n* Address some feedback\r\n\r\n* Address more feedback\r\n\r\n* Add comments explaining imports\r\n\r\n* Add view module\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
           "timestamp": "2022-05-09T09:57:29-06:00",
@@ -51972,6 +51934,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00002348055458281905",
             "extra": "mean: 4.522341644061638 usec\nrounds: 64936"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "75313b6c6d58945c1401622b6683ccdd28657984",
+          "message": "Update scripts and lint configs (#2929)",
+          "timestamp": "2022-09-13T22:28:28+05:30",
+          "tree_id": "a38b14a391d72c4699f2a868d8bcf6ff1a72c20a",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/75313b6c6d58945c1401622b6683ccdd28657984"
+        },
+        "date": 1663088440175,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 129193.21702854076,
+            "unit": "iter/sec",
+            "range": "stddev: 4.1861636455847716e-7",
+            "extra": "mean: 7.740344446868947 usec\nrounds: 13947"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 228604.66791294696,
+            "unit": "iter/sec",
+            "range": "stddev: 2.6859893919835984e-7",
+            "extra": "mean: 4.3743638707360155 usec\nrounds: 69445"
           }
         ]
       }
