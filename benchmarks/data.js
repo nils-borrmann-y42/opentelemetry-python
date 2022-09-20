@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1663688819832,
+  "lastUpdate": 1663688824860,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -74792,44 +74792,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "606d535551c14fbc5a68921d485be35ddb5a6ce2",
-          "message": "Refactor metrics SDK paths (#2670)\n\n* Refactor metrics SDK paths\r\n\r\nFixes #2666\r\n\r\n* Add fix for 3.6\r\n\r\n* Fix OTLP metrics exporter\r\n\r\n* Address some feedback\r\n\r\n* Address more feedback\r\n\r\n* Add comments explaining imports\r\n\r\n* Add view module\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
-          "timestamp": "2022-05-09T09:57:29-06:00",
-          "tree_id": "c0e01f9f93a7cd7a4ce2f8434a86bbdc6847a1c8",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/606d535551c14fbc5a68921d485be35ddb5a6ce2"
-        },
-        "date": 1652111924438,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 18700.643067350367,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00007540855063417326",
-            "extra": "mean: 53.474096928030754 usec\nrounds: 4199"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 13216.736256298196,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00007572473881835203",
-            "extra": "mean: 75.66164449437872 usec\nrounds: 6239"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "michelem@lumigo.io",
             "name": "Michele Mancioppi",
             "username": "mmanciop"
@@ -78586,6 +78548,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0000018223038580027521",
             "extra": "mean: 49.13876507157988 usec\nrounds: 8858"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "725c5800121362f773c7a1432f91ae0f6f68c33f",
+          "message": "Update contrib repo SHA (#2937)",
+          "timestamp": "2022-09-20T08:43:34-07:00",
+          "tree_id": "ebfc43ebb2b478600d5b796402d8c8da3fd9f3db",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/725c5800121362f773c7a1432f91ae0f6f68c33f"
+        },
+        "date": 1663688754191,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 29627.279429186787,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010591613358551028",
+            "extra": "mean: 33.75267723754844 usec\nrounds: 6212"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20557.30297844065,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000003449010942776743",
+            "extra": "mean: 48.644513390143835 usec\nrounds: 8327"
           }
         ]
       }
