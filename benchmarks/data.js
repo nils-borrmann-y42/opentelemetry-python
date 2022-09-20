@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1663688843514,
+  "lastUpdate": 1663688848565,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -86198,44 +86198,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "606d535551c14fbc5a68921d485be35ddb5a6ce2",
-          "message": "Refactor metrics SDK paths (#2670)\n\n* Refactor metrics SDK paths\r\n\r\nFixes #2666\r\n\r\n* Add fix for 3.6\r\n\r\n* Fix OTLP metrics exporter\r\n\r\n* Address some feedback\r\n\r\n* Address more feedback\r\n\r\n* Add comments explaining imports\r\n\r\n* Add view module\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
-          "timestamp": "2022-05-09T09:57:29-06:00",
-          "tree_id": "c0e01f9f93a7cd7a4ce2f8434a86bbdc6847a1c8",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/606d535551c14fbc5a68921d485be35ddb5a6ce2"
-        },
-        "date": 1652111930517,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 96114.4872711365,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000070593753213939375",
-            "extra": "mean: 10.404258800018624 usec\nrounds: 12500"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 196112.03346881573,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000008886018900951831",
-            "extra": "mean: 5.0991261592268 usec\nrounds: 62112"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "michelem@lumigo.io",
             "name": "Michele Mancioppi",
             "username": "mmanciop"
@@ -89992,6 +89954,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 2.3879715491133285e-7",
             "extra": "mean: 4.014254483367658 usec\nrounds: 68028"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "725c5800121362f773c7a1432f91ae0f6f68c33f",
+          "message": "Update contrib repo SHA (#2937)",
+          "timestamp": "2022-09-20T08:43:34-07:00",
+          "tree_id": "ebfc43ebb2b478600d5b796402d8c8da3fd9f3db",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/725c5800121362f773c7a1432f91ae0f6f68c33f"
+        },
+        "date": 1663688760650,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 114825.49105069537,
+            "unit": "iter/sec",
+            "range": "stddev: 8.449931495365903e-7",
+            "extra": "mean: 8.708867611622063 usec\nrounds: 12063"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 210531.20822449145,
+            "unit": "iter/sec",
+            "range": "stddev: 5.647198813281256e-7",
+            "extra": "mean: 4.749889617000109 usec\nrounds: 61350"
           }
         ]
       }
