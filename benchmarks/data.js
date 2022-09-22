@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1663853515819,
+  "lastUpdate": 1663853639034,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -22818,44 +22818,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "michelem@lumigo.io",
-            "name": "Michele Mancioppi",
-            "username": "mmanciop"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "f367ec2045b2588be95dfa11913868c1d4fcbbc2",
-          "message": "Implement 'process.runtime.*' resource detector (#2660)",
-          "timestamp": "2022-05-09T12:27:34-07:00",
-          "tree_id": "bca94d32d02b8bd6f1f62b5510bf7d282b175430",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f367ec2045b2588be95dfa11913868c1d4fcbbc2"
-        },
-        "date": 1652124731564,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 3773.2359646301466,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000006756142787313002",
-            "extra": "mean: 265.0245066499625 usec\nrounds: 1579"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 7573.289200426612,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0006665489121565773",
-            "extra": "mean: 132.04302298975574 usec\nrounds: 9091"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "ocelotl@users.noreply.github.com",
             "name": "Diego Hurtado",
             "username": "ocelotl"
@@ -26612,6 +26574,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006656631778121424",
             "extra": "mean: 132.3943604874251 usec\nrounds: 8286"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c0e8f4056db774e4eeaf3f30016a19b2ba8b0408",
+          "message": "Add force_flush to span exporters (#2919)\n\n* Add force_flush to span exporters\r\n\r\n* Fix lint\r\n\r\n* add missing method to grpc exporter\r\n\r\n* Update contrib SHA\r\n\r\n* Add CHANGELOG entry",
+          "timestamp": "2022-09-22T15:27:58+02:00",
+          "tree_id": "bf5eeda313f3fb53c07956a946726e283b959994",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c0e8f4056db774e4eeaf3f30016a19b2ba8b0408"
+        },
+        "date": 1663853570379,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3750.307281257562,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000067760320612927254",
+            "extra": "mean: 266.64481734538765 usec\nrounds: 1522"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7574.799696368674,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006981077399541335",
+            "extra": "mean: 132.01669220103545 usec\nrounds: 7937"
           }
         ]
       }
