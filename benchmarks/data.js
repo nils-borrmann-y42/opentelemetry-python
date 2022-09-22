@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1663689120725,
+  "lastUpdate": 1663853457461,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -86198,44 +86198,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "michelem@lumigo.io",
-            "name": "Michele Mancioppi",
-            "username": "mmanciop"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "f367ec2045b2588be95dfa11913868c1d4fcbbc2",
-          "message": "Implement 'process.runtime.*' resource detector (#2660)",
-          "timestamp": "2022-05-09T12:27:34-07:00",
-          "tree_id": "bca94d32d02b8bd6f1f62b5510bf7d282b175430",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f367ec2045b2588be95dfa11913868c1d4fcbbc2"
-        },
-        "date": 1652124523680,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 123377.83744616351,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000001744412509339393",
-            "extra": "mean: 8.10518340002802 usec\nrounds: 11494"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 240965.25619043343,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000001196484507728486",
-            "extra": "mean: 4.149975875400502 usec\nrounds: 67110"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "ocelotl@users.noreply.github.com",
             "name": "Diego Hurtado",
             "username": "ocelotl"
@@ -89992,6 +89954,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 5.647198813281256e-7",
             "extra": "mean: 4.749889617000109 usec\nrounds: 61350"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "c0e8f4056db774e4eeaf3f30016a19b2ba8b0408",
+          "message": "Add force_flush to span exporters (#2919)\n\n* Add force_flush to span exporters\r\n\r\n* Fix lint\r\n\r\n* add missing method to grpc exporter\r\n\r\n* Update contrib SHA\r\n\r\n* Add CHANGELOG entry",
+          "timestamp": "2022-09-22T15:27:58+02:00",
+          "tree_id": "bf5eeda313f3fb53c07956a946726e283b959994",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/c0e8f4056db774e4eeaf3f30016a19b2ba8b0408"
+        },
+        "date": 1663853395099,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 147664.42339773104,
+            "unit": "iter/sec",
+            "range": "stddev: 4.965076890957935e-7",
+            "extra": "mean: 6.772111907460073 usec\nrounds: 11161"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 285381.33249827643,
+            "unit": "iter/sec",
+            "range": "stddev: 3.8765670210191206e-7",
+            "extra": "mean: 3.5040834354715176 usec\nrounds: 58824"
           }
         ]
       }
