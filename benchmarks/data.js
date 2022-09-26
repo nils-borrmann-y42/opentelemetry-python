@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1664199174607,
+  "lastUpdate": 1664199177796,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -55792,44 +55792,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "87b459ff87ee0a70010417f00250b01ba4f2ef6f",
-          "message": "Remove instrument_class_temporality from collect args (#2674)\n\nFixes #2673",
-          "timestamp": "2022-05-10T10:02:37-06:00",
-          "tree_id": "1309933bc07e89591c1ca814b1c262d39c53442b",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/87b459ff87ee0a70010417f00250b01ba4f2ef6f"
-        },
-        "date": 1652198674155,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
-            "value": 87259.64129638534,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00002462833201542215",
-            "extra": "mean: 11.460051693352815 usec\nrounds: 9479"
-          },
-          {
-            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
-            "value": 189558.91402137946,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00001838981074856782",
-            "extra": "mean: 5.2754047740915775 usec\nrounds: 57143"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "a821311a954f027f4ae00f87611a73706c679f47",
           "message": "Add attributes to aggregation constructor parameters (#2676)\n\nFixes #2675",
           "timestamp": "2022-05-10T16:15:05Z",
@@ -59576,6 +59538,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 3.9945404730611327e-7",
             "extra": "mean: 4.155410821340233 usec\nrounds: 76924"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "42db164fb1b783f708eaabc84ca7a03e2fe763de",
+          "message": "Update scripts (#2944)",
+          "timestamp": "2022-09-26T14:29:33+01:00",
+          "tree_id": "02403138185d2516672b85d668265f83f08eda3c",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/42db164fb1b783f708eaabc84ca7a03e2fe763de"
+        },
+        "date": 1664199100404,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_extract_single_header",
+            "value": 99961.88771771804,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000014180941622913637",
+            "extra": "mean: 10.003812681328066 usec\nrounds: 13106"
+          },
+          {
+            "name": "propagator/opentelemetry-propagator-b3/tests/performance/benchmarks/trace/propagation/test_benchmark_b3_format.py::test_inject_empty_context",
+            "value": 216688.32251353614,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0000010245648955990824",
+            "extra": "mean: 4.614923353507117 usec\nrounds: 63695"
           }
         ]
       }
