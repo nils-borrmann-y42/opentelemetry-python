@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1664227878492,
+  "lastUpdate": 1664227932671,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -78604,44 +78604,6 @@ window.BENCHMARK_DATA = {
             "username": "web-flow"
           },
           "distinct": true,
-          "id": "a821311a954f027f4ae00f87611a73706c679f47",
-          "message": "Add attributes to aggregation constructor parameters (#2676)\n\nFixes #2675",
-          "timestamp": "2022-05-10T16:15:05Z",
-          "tree_id": "e99346b8be255b4a971929af560f05fcd0d231aa",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/a821311a954f027f4ae00f87611a73706c679f47"
-        },
-        "date": 1652199454924,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 231634.54990786797,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000029426609227890384",
-            "extra": "mean: 4.317145263509847 usec\nrounds: 37454"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 154044.26231883292,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000013988119457073201",
-            "extra": "mean: 6.491640681366316 usec\nrounds: 108696"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
           "id": "e8fbb08f6b7c7e983755f22185473014175aaa0e",
           "message": "Refactor metric format (#2658)\n\n* Refactor metric format\r\n\r\nFixes #2646\r\n\r\n* Do not overwrite pb2_scope_metrics\r\n\r\n* Refactor for loops\r\n\r\n* Add multiple scope test case\r\n\r\n* Fix interfaces\r\n\r\n* Fix docs\r\n\r\n* Update exporter/opentelemetry-exporter-prometheus/src/opentelemetry/exporter/prometheus/__init__.py\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>\r\n\r\n* Fix lint\r\n\r\n* Remove resource check\r\n\r\n* Remove instrumentation_scope check\r\n\r\n* Group metrics by instrumentation scopes in the SDK\r\n\r\n* Remove label_keyss\r\n\r\n* Use strings instead of mocks\r\n\r\n* Return generator instead of a list\r\n\r\n* Fix lint\r\n\r\n* Rename variables\r\n\r\nCo-authored-by: Aaron Abbott <aaronabbott@google.com>",
           "timestamp": "2022-05-12T16:09:13-06:00",
@@ -82388,6 +82350,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000011902747968813304",
             "extra": "mean: 5.835808733489832 usec\nrounds: 111112"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "srikanth.chekuri92@gmail.com",
+            "name": "Srikanth Chekuri",
+            "username": "srikanthccv"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6a61ebacdcd6e865c6e8d4fc6ea74422ce87820a",
+          "message": "updating changelogs and version to 1.13.0-0.34b0 (#2950)",
+          "timestamp": "2022-09-27T02:57:28+05:30",
+          "tree_id": "c631fa16c7d3ede01eaa4ff060860d1cc7b43aa3",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/6a61ebacdcd6e865c6e8d4fc6ea74422ce87820a"
+        },
+        "date": 1664227848199,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 165722.94265265504,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00008973764493909911",
+            "extra": "mean: 6.034167532831816 usec\nrounds: 156250"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 84773.4009414629,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00013908406064602665",
+            "extra": "mean: 11.796152907567228 usec\nrounds: 178572"
           }
         ]
       }
