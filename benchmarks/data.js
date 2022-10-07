@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1665161480850,
+  "lastUpdate": 1665161483779,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -90000,44 +90000,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "741389585b5d6d1af808a8939c5348113158f969",
-          "message": "Make metrics public (#2684)\n\n* Make metrics public\n\nFixes #2682\n\n* Make environment variable public\n\n* Make environment variable public\n\n* Fix example\n\n* Make exporter public\n\n* Fix environment variable import path\n\n* Fix exporter\n\n* Fix lint\n\n* Fix import order\n\n* Add tag\n\n* Fix import path",
-          "timestamp": "2022-05-13T20:09:23-06:00",
-          "tree_id": "26871e4352c1ff17ecb31ce0f368916b2cd37644",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/741389585b5d6d1af808a8939c5348113158f969"
-        },
-        "date": 1652494267497,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 21115.495864728942,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000022342697780288835",
-            "extra": "mean: 47.35858472878146 usec\nrounds: 4479"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 14833.634860623002,
-            "unit": "iter/sec",
-            "range": "stddev: 0.000037823467331796423",
-            "extra": "mean: 67.41435995937685 usec\nrounds: 7862"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "xgbarry@gmail.com",
             "name": "Gen Xu",
             "username": "gen-xu"
@@ -93794,6 +93756,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.00002366725973359644",
             "extra": "mean: 55.073078411408126 usec\nrounds: 7856"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "ocelotl@users.noreply.github.com",
+            "name": "Diego Hurtado",
+            "username": "ocelotl"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "96414a770e04f7a6e3214cb8694acdb2f4afc83b",
+          "message": "Update contrib repo SHA (#2966)\n\nFixes #2965",
+          "timestamp": "2022-10-07T22:18:19+05:30",
+          "tree_id": "335840041c5424a5f6d8180141e92cd8792fa09e",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/96414a770e04f7a6e3214cb8694acdb2f4afc83b"
+        },
+        "date": 1665161406679,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 21535.901454153092,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000037133838894766965",
+            "extra": "mean: 46.434090633673236 usec\nrounds: 3630"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 13906.287233338975,
+            "unit": "iter/sec",
+            "range": "stddev: 0.00008141374776797028",
+            "extra": "mean: 71.90991982407763 usec\nrounds: 7284"
           }
         ]
       }
