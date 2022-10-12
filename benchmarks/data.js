@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1665576733596,
+  "lastUpdate": 1665576806130,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -37874,44 +37874,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "ocelotl@users.noreply.github.com",
-            "name": "Diego Hurtado",
-            "username": "ocelotl"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "e45d833bd06b9309ce82f8e6085eeb2b7948edad",
-          "message": "Release 1.12.0rc1-0.31b0 (#2698)",
-          "timestamp": "2022-05-17T13:18:54-06:00",
-          "tree_id": "e3e1037de2a8dc26261f138c9bd62f4011aac97d",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/e45d833bd06b9309ce82f8e6085eeb2b7948edad"
-        },
-        "date": 1652815541210,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
-            "value": 2486.8370727971846,
-            "unit": "iter/sec",
-            "range": "stddev: 0.00005553389843585019",
-            "extra": "mean: 402.1172158557231 usec\nrounds: 1274"
-          },
-          {
-            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
-            "value": 5650.899365021724,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0007792852203426395",
-            "extra": "mean: 176.96298153703816 usec\nrounds: 8666"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "srikanth.chekuri92@gmail.com",
             "name": "Srikanth Chekuri",
             "username": "srikanthccv"
@@ -41668,6 +41630,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.0006647511041038265",
             "extra": "mean: 129.64188257345327 usec\nrounds: 8533"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8927ae5085c5cc3d62603e7bdd473f34abf882ff",
+          "message": "`exporter-otlp-proto-http`: add user agent string (#2959)\n\n* `exporter-otlp-proto-http`: add user agent string\r\n\r\nAdding user agent string to OTLP HTTP exporter. As part of the change, I refactored the content-type header as well.\r\n\r\nPart of #2958\r\n\r\n* update changelog\r\n\r\n* fix linting, fix link\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
+          "timestamp": "2022-10-12T13:07:08+01:00",
+          "tree_id": "709b8012e9671d0957d0880e49200fe6eb82d356",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/8927ae5085c5cc3d62603e7bdd473f34abf882ff"
+        },
+        "date": 1665576738138,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_simple_span_processor",
+            "value": 3934.6305062409633,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000004140295423926446",
+            "extra": "mean: 254.15347093299803 usec\nrounds: 1703"
+          },
+          {
+            "name": "exporter/opentelemetry-exporter-otlp-proto-grpc/tests/performance/benchmarks/test_benchmark_trace_exporter.py::test_batch_span_processor",
+            "value": 7771.65810124591,
+            "unit": "iter/sec",
+            "range": "stddev: 0.0006729339360859809",
+            "extra": "mean: 128.67267022975255 usec\nrounds: 8606"
           }
         ]
       }
