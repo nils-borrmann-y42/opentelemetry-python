@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1665576615265,
+  "lastUpdate": 1665576622402,
   "repoUrl": "https://github.com/open-telemetry/opentelemetry-python",
   "entries": {
     "OpenTelemetry Python Benchmarks - Python 3.8 - core": [
@@ -67188,44 +67188,6 @@ window.BENCHMARK_DATA = {
       {
         "commit": {
           "author": {
-            "email": "xgbarry@gmail.com",
-            "name": "Gen Xu",
-            "username": "gen-xu"
-          },
-          "committer": {
-            "email": "noreply@github.com",
-            "name": "GitHub",
-            "username": "web-flow"
-          },
-          "distinct": true,
-          "id": "f1ff2a0c61c322585e3eb96c2aef8812613a21e8",
-          "message": "Fix #2689 LoggingHandler to handle exc_info=False (#2690)",
-          "timestamp": "2022-05-16T09:19:52-07:00",
-          "tree_id": "0f346c94bfb870b30bfdb2de0f3f44d6f1d738e5",
-          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/f1ff2a0c61c322585e3eb96c2aef8812613a21e8"
-        },
-        "date": 1652718075441,
-        "tool": "pytest",
-        "benches": [
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
-            "value": 41542.19068049698,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000015909540211551227",
-            "extra": "mean: 24.07191300263987 usec\nrounds: 3184"
-          },
-          {
-            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
-            "value": 29318.75457880259,
-            "unit": "iter/sec",
-            "range": "stddev: 0.0000018458850944119747",
-            "extra": "mean: 34.10786079989217 usec\nrounds: 9375"
-          }
-        ]
-      },
-      {
-        "commit": {
-          "author": {
             "email": "ocelotl@users.noreply.github.com",
             "name": "Diego Hurtado",
             "username": "ocelotl"
@@ -70982,6 +70944,44 @@ window.BENCHMARK_DATA = {
             "unit": "iter/sec",
             "range": "stddev: 0.000023303388725432045",
             "extra": "mean: 68.96267819303412 usec\nrounds: 7924"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "aboten@lightstep.com",
+            "name": "Alex Boten",
+            "username": "codeboten"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "8927ae5085c5cc3d62603e7bdd473f34abf882ff",
+          "message": "`exporter-otlp-proto-http`: add user agent string (#2959)\n\n* `exporter-otlp-proto-http`: add user agent string\r\n\r\nAdding user agent string to OTLP HTTP exporter. As part of the change, I refactored the content-type header as well.\r\n\r\nPart of #2958\r\n\r\n* update changelog\r\n\r\n* fix linting, fix link\r\n\r\nCo-authored-by: Srikanth Chekuri <srikanth.chekuri92@gmail.com>",
+          "timestamp": "2022-10-12T13:07:08+01:00",
+          "tree_id": "709b8012e9671d0957d0880e49200fe6eb82d356",
+          "url": "https://github.com/open-telemetry/opentelemetry-python/commit/8927ae5085c5cc3d62603e7bdd473f34abf882ff"
+        },
+        "date": 1665576556942,
+        "tool": "pytest",
+        "benches": [
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_span",
+            "value": 28247.023660760882,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000003700689333302891",
+            "extra": "mean: 35.40195993778777 usec\nrounds: 5142"
+          },
+          {
+            "name": "opentelemetry-sdk/tests/performance/benchmarks/trace/test_benchmark_trace.py::test_simple_start_as_current_span",
+            "value": 20597.496009855902,
+            "unit": "iter/sec",
+            "range": "stddev: 0.000002669795798829271",
+            "extra": "mean: 48.54959066487984 usec\nrounds: 7263"
           }
         ]
       }
